@@ -18,10 +18,9 @@ class Dog
   
   def self.print_all 
     
-    @all.each do |dog|
-      
-    
-    binding.pry 
+    @@all.each do |dog|
+      puts dog.name
+     # binding.pry 
   end 
   end 
   
@@ -29,7 +28,7 @@ class Dog
    @@all.clear
   end 
   
-  #def self.save
-  #  @@all << self 
- # end 
+  def self.save
+  @@all << self 
+ end 
 end 
